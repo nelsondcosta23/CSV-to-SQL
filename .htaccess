@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "Authorized Users Only"
+AuthBasicProvider file
+AuthUserFile /home/webhost_user/csvtosql/global/.htpasswd
+<RequireAny>
+Require valid-user
+</RequireAny>
