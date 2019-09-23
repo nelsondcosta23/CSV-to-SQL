@@ -2,8 +2,9 @@
 //created by Nelson Costa @ Soc.Com.C.Santos SA
 //https://www.linkedin.com/in/nelsondcosta/
 //https://github.com/nelsondcosta23
+//version 1.3
 
-include'configsys.php'; 
+include'./global/configsys.php'; 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if (isset($_POST["import"])) {
@@ -42,8 +43,8 @@ if (isset($_POST["import"])) {
 -->
 <head>
 <meta charset="UTF-8">
-<script src="jquery-3.2.1.min.js"></script>
-<link rel="stylesheet" href="stylish.css">
+<script src="./global/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="./global/stylish.css">
 
 <script type="text/javascript">
 $(document).ready(function() {
